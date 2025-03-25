@@ -1,0 +1,46 @@
+.content_body{
+}
+
+.content_body h2{
+    padding-left: var(--lwc-spacingSmall, 0.75rem);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #032d60;
+    line-height: 1.25;
+}
+.content_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.search_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0 var(--lwc-spacingSmall, 0.75rem);
+}
+
+.flight_data{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.alert_warning {
+    background-color: #FFF3BF;
+    border-left: 4px solid #FFB75D;
+    color: #704214; 
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+}
+
+/* pseudo-element for warning */
+.alert_warning:before {
+    content: "⚠";
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+}
