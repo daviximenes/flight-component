@@ -1,0 +1,89 @@
+.player{
+	height: 600px;
+	max-width: 100%;
+	width: 700px;
+	border-radius: 6px;
+	background-color: rgb(255, 255, 255);
+	padding: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.player .title{
+	font-size: 2em;
+}
+
+.player button{
+	padding: 10px;
+	font-size: 1.25em;
+	cursor: pointer;
+	margin-bottom: 10px;
+	border: none;
+	background: #0435a6;
+	color: #fff;
+	border-radius: 4px;
+}
+
+.player button:hover{
+	transition: .3s;
+	box-shadow: 2px 2px 5px #444;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: rgb(133,133,133);
+}
+
+.card-info{
+	border-radius: 4px;    
+	height: 140px;
+    width: calc(20% - 8px);
+	margin: 4px;
+	background: #0435a6;
+	padding: 10px;
+}
+
+input[type='text']{
+	margin-bottom: 10px;
+	border: 1px solid #777;
+	border-radius: 4px;
+	padding: 3px;
+	font-size: 2em;
+}
+
+.green{
+	background-color: #5aa604;
+}
+
+.red{
+	background-color: #a60404;
+}
+
+.yellow{
+	background-color: #a6a404;
+}
+
+.arrow-up{
+  --t: 45%; /* control the tail part */
+  --h: 40%; /* control the head part */
+  
+  aspect-ratio: 1;
+  height: auto;
+  background: rgba(0,0,0,.15);
+  clip-path: polygon(calc(50% - var(--t)/2) 100%,calc(50% - var(--t)/2) var(--h),0 var(--h),50% 0,100% var(--h),calc(50% + var(--t)/2) var(--h),calc(50% + var(--t)/2) 100%);
+}
+
+.arrow-down{
+  --t: 45%; /* control the tail part */
+  --h: 40%; /* control the head part */
+  
+  aspect-ratio: 1;
+  height: auto;
+  background: rgba(0,0,0,.15);
+  clip-path: polygon(calc(50% - var(--t)/2) 0,calc(50% - var(--t)/2) calc(100% - var(--h)),0 calc(100% - var(--h)),50% 100%,100% calc(100% - var(--h)),calc(50% + var(--t)/2) calc(100% - var(--h)),calc(50% + var(--t)/2) 0);
+}

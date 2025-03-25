@@ -1,0 +1,17 @@
+<template>
+    <div class="container">
+        
+        <div class="style"></div>
+        <template for:each={projects} for:item="proj">
+            <div key={proj.Id} class="card-project">
+                <div class="card-img">
+                    <img src={proj.Image__c} alt="">
+                </div>
+                <div class="card-text">
+                    <p class="title">{proj.Name}</p>
+                    <p class="description">{proj.Description__c}</p>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,37 @@
+<template>
+    <lightning-card variant="narrow" icon-name="standard:opportunity">
+        <h1 slot="title">Atualizar fase</h1>
+        <div slot="actions">
+            <lightning-button-icon
+                icon-name="utility:down"
+            ></lightning-button-icon>
+        </div>
+        <div class="content">
+
+            <lightning-record-edit-form
+            density="compact"
+            object-api-name={objectApiName}
+            record-id={recordId}
+            onsuccess={handleSuccess} 
+            onsubmit={handleSubmit}
+            >
+            <lightning-input-field field-name="StageName"> </lightning-input-field>
+            <lightning-button
+            class="slds-m-top_small"
+            variant="brand"
+            type="submit"
+            name="update"
+            label="Atualizar"
+                    >
+                </lightning-button>
+            </lightning-record-edit-form>
+            <audio controls id="music" class="audio">
+                <source src="" type="audio/mpeg">
+            </audio>
+        </div>
+        <div slot="footer">
+            <h6>This is the footer</h6>
+        </div>
+    </lightning-card>
+    
+</template>
